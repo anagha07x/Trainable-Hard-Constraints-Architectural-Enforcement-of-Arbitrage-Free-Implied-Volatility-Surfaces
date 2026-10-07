@@ -1,0 +1,79 @@
+% Clean data: accuracy
+normal & SVI (per slice) & 0.0150 $\pm$ 0.0012 & 0.0154 $\pm$ 0.0020 & 0.0469 $\pm$ 0.0077 \\
+normal & SSVI & 0.0074 $\pm$ 0.0006 & 0.0072 $\pm$ 0.0005 & 0.0253 $\pm$ 0.0057 \\
+normal & Soft-penalty MLP & 0.0092 $\pm$ 0.0023 & 0.0089 $\pm$ 0.0023 & 0.0272 $\pm$ 0.0116 \\
+normal & Hard-constrained (ours) & 0.0099 $\pm$ 0.0017 & 0.0094 $\pm$ 0.0020 & 0.0306 $\pm$ 0.0104 \\
+normal & Hard, no init calibration & 0.1378 $\pm$ 0.0016 & 0.1411 $\pm$ 0.0027 & 0.1785 $\pm$ 0.0033 \\
+normal & Dugas-style (naive init) & 111.7751 $\pm$ 5.1044 & 112.5833 $\pm$ 5.5493 & 14.0908 $\pm$ 0.4400 \\
+high skew & SVI (per slice) & 0.0154 $\pm$ 0.0007 & 0.0161 $\pm$ 0.0008 & 0.0495 $\pm$ 0.0068 \\
+high skew & SSVI & 0.0096 $\pm$ 0.0018 & 0.0094 $\pm$ 0.0017 & 0.0374 $\pm$ 0.0067 \\
+high skew & Soft-penalty MLP & 0.0112 $\pm$ 0.0017 & 0.0109 $\pm$ 0.0017 & 0.0368 $\pm$ 0.0098 \\
+high skew & Hard-constrained (ours) & 0.0124 $\pm$ 0.0015 & 0.0123 $\pm$ 0.0017 & 0.0403 $\pm$ 0.0106 \\
+high skew & Hard, no init calibration & 0.1368 $\pm$ 0.0015 & 0.1399 $\pm$ 0.0023 & 0.1884 $\pm$ 0.0096 \\
+high skew & Dugas-style (naive init) & 111.7690 $\pm$ 5.1040 & 112.5775 $\pm$ 5.5484 & 14.0651 $\pm$ 0.4381 \\
+stressed & SVI (per slice) & 0.0160 $\pm$ 0.0018 & 0.0169 $\pm$ 0.0021 & 0.0341 $\pm$ 0.0055 \\
+stressed & SSVI & 0.0135 $\pm$ 0.0019 & 0.0133 $\pm$ 0.0019 & 0.0336 $\pm$ 0.0053 \\
+stressed & Soft-penalty MLP & 0.0154 $\pm$ 0.0065 & 0.0156 $\pm$ 0.0071 & 0.0328 $\pm$ 0.0206 \\
+stressed & Hard-constrained (ours) & 0.0176 $\pm$ 0.0029 & 0.0182 $\pm$ 0.0033 & 0.0388 $\pm$ 0.0101 \\
+stressed & Hard, no init calibration & 0.1104 $\pm$ 0.0023 & 0.1134 $\pm$ 0.0041 & 0.1749 $\pm$ 0.0115 \\
+stressed & Dugas-style (naive init) & 111.7147 $\pm$ 5.1029 & 112.5252 $\pm$ 5.5470 & 13.8278 $\pm$ 0.4448 \\
+
+% Clean data: violations
+normal & SVI (per slice) & 0.00\% $\pm$ 0.00\% & 2.69\% $\pm$ 2.73\% & 31.02\% $\pm$ 2.63\% & 0.04136 $\pm$ 0.00954 \\
+normal & SSVI & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+normal & Soft-penalty MLP & 0.02\% $\pm$ 0.04\% & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+normal & Hard-constrained (ours) & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+normal & Hard, no init calibration & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+normal & Dugas-style (naive init) & 0.00\% $\pm$ 0.00\% & 72.56\% $\pm$ 43.64\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+high skew & SVI (per slice) & 0.00\% $\pm$ 0.00\% & 3.20\% $\pm$ 3.08\% & 28.13\% $\pm$ 4.60\% & 0.04164 $\pm$ 0.01192 \\
+high skew & SSVI & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+high skew & Soft-penalty MLP & 0.00\% $\pm$ 0.00\% & 0.30\% $\pm$ 0.62\% & 0.02\% $\pm$ 0.06\% & 0.00006 $\pm$ 0.00014 \\
+high skew & Hard-constrained (ours) & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+high skew & Hard, no init calibration & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+high skew & Dugas-style (naive init) & 0.00\% $\pm$ 0.00\% & 73.13\% $\pm$ 43.50\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+stressed & SVI (per slice) & 0.00\% $\pm$ 0.00\% & 3.88\% $\pm$ 5.39\% & 17.86\% $\pm$ 4.60\% & 0.03501 $\pm$ 0.01884 \\
+stressed & SSVI & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+stressed & Soft-penalty MLP & 0.04\% $\pm$ 0.06\% & 0.84\% $\pm$ 1.48\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+stressed & Hard-constrained (ours) & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+stressed & Hard, no init calibration & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+stressed & Dugas-style (naive init) & 0.00\% $\pm$ 0.00\% & 74.01\% $\pm$ 43.36\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+
+% Calendar-inversion stress test: accuracy
+normal & SVI (per slice) & 0.0208 $\pm$ 0.0032 & 0.0218 $\pm$ 0.0040 & 0.0709 $\pm$ 0.0161 & 0.0434 $\pm$ 0.0154 & 0.0218 $\pm$ 0.0091 \\
+normal & SSVI & 0.0111 $\pm$ 0.0028 & 0.0112 $\pm$ 0.0032 & 0.0375 $\pm$ 0.0148 & 0.0185 $\pm$ 0.0079 & 0.0222 $\pm$ 0.0057 \\
+normal & Soft-penalty MLP & 0.0119 $\pm$ 0.0012 & 0.0120 $\pm$ 0.0012 & 0.0377 $\pm$ 0.0112 & 0.0163 $\pm$ 0.0064 & 0.0257 $\pm$ 0.0079 \\
+normal & Hard-constrained (ours) & 0.0115 $\pm$ 0.0011 & 0.0112 $\pm$ 0.0006 & 0.0317 $\pm$ 0.0054 & 0.0151 $\pm$ 0.0052 & 0.0265 $\pm$ 0.0047 \\
+normal & Hard, no init calibration & 0.1365 $\pm$ 0.0014 & 0.1398 $\pm$ 0.0025 & 0.1770 $\pm$ 0.0032 & 0.1260 $\pm$ 0.0010 & 0.1655 $\pm$ 0.0035 \\
+normal & Dugas-style (naive init) & 111.7736 $\pm$ 5.1045 & 112.5819 $\pm$ 5.5493 & 14.0906 $\pm$ 0.4400 & 70.8896 $\pm$ 4.1710 & 70.9292 $\pm$ 4.1694 \\
+high skew & SVI (per slice) & 0.0215 $\pm$ 0.0031 & 0.0228 $\pm$ 0.0043 & 0.0710 $\pm$ 0.0125 & 0.0461 $\pm$ 0.0140 & 0.0239 $\pm$ 0.0109 \\
+high skew & SSVI & 0.0131 $\pm$ 0.0025 & 0.0130 $\pm$ 0.0030 & 0.0476 $\pm$ 0.0144 & 0.0192 $\pm$ 0.0085 & 0.0238 $\pm$ 0.0074 \\
+high skew & Soft-penalty MLP & 0.0127 $\pm$ 0.0015 & 0.0127 $\pm$ 0.0018 & 0.0387 $\pm$ 0.0084 & 0.0171 $\pm$ 0.0066 & 0.0263 $\pm$ 0.0079 \\
+high skew & Hard-constrained (ours) & 0.0139 $\pm$ 0.0013 & 0.0138 $\pm$ 0.0014 & 0.0383 $\pm$ 0.0064 & 0.0167 $\pm$ 0.0040 & 0.0303 $\pm$ 0.0049 \\
+high skew & Hard, no init calibration & 0.1355 $\pm$ 0.0014 & 0.1385 $\pm$ 0.0022 & 0.1872 $\pm$ 0.0097 & 0.1230 $\pm$ 0.0021 & 0.1643 $\pm$ 0.0022 \\
+high skew & Dugas-style (naive init) & 111.7675 $\pm$ 5.1039 & 112.5760 $\pm$ 5.5483 & 14.0650 $\pm$ 0.4381 & 70.8841 $\pm$ 4.1695 & 70.9257 $\pm$ 4.1705 \\
+stressed & SVI (per slice) & 0.0230 $\pm$ 0.0048 & 0.0246 $\pm$ 0.0058 & 0.0463 $\pm$ 0.0054 & 0.0488 $\pm$ 0.0191 & 0.0222 $\pm$ 0.0122 \\
+stressed & SSVI & 0.0175 $\pm$ 0.0020 & 0.0177 $\pm$ 0.0026 & 0.0434 $\pm$ 0.0108 & 0.0263 $\pm$ 0.0094 & 0.0230 $\pm$ 0.0076 \\
+stressed & Soft-penalty MLP & 0.0167 $\pm$ 0.0034 & 0.0169 $\pm$ 0.0029 & 0.0316 $\pm$ 0.0078 & 0.0249 $\pm$ 0.0096 & 0.0248 $\pm$ 0.0065 \\
+stressed & Hard-constrained (ours) & 0.0193 $\pm$ 0.0015 & 0.0198 $\pm$ 0.0015 & 0.0370 $\pm$ 0.0056 & 0.0248 $\pm$ 0.0058 & 0.0320 $\pm$ 0.0076 \\
+stressed & Hard, no init calibration & 0.1090 $\pm$ 0.0024 & 0.1119 $\pm$ 0.0041 & 0.1756 $\pm$ 0.0112 & 0.0921 $\pm$ 0.0057 & 0.1357 $\pm$ 0.0022 \\
+stressed & Dugas-style (naive init) & 111.7131 $\pm$ 5.1031 & 112.5235 $\pm$ 5.5471 & 13.8276 $\pm$ 0.4448 & 70.8393 $\pm$ 4.1714 & 70.8849 $\pm$ 4.1685 \\
+
+% Calendar-inversion stress test: violations
+normal & SVI (per slice) & 0.00\% $\pm$ 0.00\% & 5.91\% $\pm$ 4.25\% & 33.23\% $\pm$ 5.64\% & 0.07245 $\pm$ 0.02760 \\
+normal & SSVI & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+normal & Soft-penalty MLP & 0.14\% $\pm$ 0.31\% & 0.00\% $\pm$ 0.00\% & 0.45\% $\pm$ 0.61\% & 0.00035 $\pm$ 0.00072 \\
+normal & Hard-constrained (ours) & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+normal & Hard, no init calibration & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+normal & Dugas-style (naive init) & 0.00\% $\pm$ 0.00\% & 72.56\% $\pm$ 43.64\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+high skew & SVI (per slice) & 0.00\% $\pm$ 0.00\% & 8.68\% $\pm$ 4.33\% & 32.94\% $\pm$ 5.74\% & 0.07851 $\pm$ 0.02713 \\
+high skew & SSVI & 0.00\% $\pm$ 0.00\% & 0.82\% $\pm$ 1.84\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+high skew & Soft-penalty MLP & 0.02\% $\pm$ 0.04\% & 0.08\% $\pm$ 0.18\% & 0.15\% $\pm$ 0.22\% & 0.00064 $\pm$ 0.00097 \\
+high skew & Hard-constrained (ours) & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+high skew & Hard, no init calibration & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+high skew & Dugas-style (naive init) & 0.00\% $\pm$ 0.00\% & 73.11\% $\pm$ 43.51\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+stressed & SVI (per slice) & 0.00\% $\pm$ 0.00\% & 9.05\% $\pm$ 2.46\% & 23.41\% $\pm$ 4.79\% & 0.07961 $\pm$ 0.03466 \\
+stressed & SSVI & 0.00\% $\pm$ 0.00\% & 1.19\% $\pm$ 2.65\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+stressed & Soft-penalty MLP & 0.00\% $\pm$ 0.00\% & 2.01\% $\pm$ 1.76\% & 0.00\% $\pm$ 0.00\% & 0.00002 $\pm$ 0.00004 \\
+stressed & Hard-constrained (ours) & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+stressed & Hard, no init calibration & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
+stressed & Dugas-style (naive init) & 0.00\% $\pm$ 0.00\% & 73.99\% $\pm$ 43.36\% & 0.00\% $\pm$ 0.00\% & 0.00000 $\pm$ 0.00000 \\
