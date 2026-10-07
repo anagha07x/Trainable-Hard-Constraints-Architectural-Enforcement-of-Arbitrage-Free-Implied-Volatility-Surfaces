@@ -1,0 +1,2 @@
+# Trainable-Hard-Constraints-Architectural-Enforcement-of-Arbitrage-Free-Implied-Volatility-Surfaces
+Official repository for the research paper exploring a novel neural architecture that guarantees convexity in log-moneyness and monotonicity in maturity by construction, trained via standard backpropagation without penalty terms or projections. Includes benchmark code against per-slice SVI, SSVI, and soft-penalty MLPs
